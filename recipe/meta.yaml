@@ -84,7 +84,7 @@ test:
     - pytest
 
 about:
-  home: https://github.com/joezuntz/cosmosis
+  home: https://github.com/cosmosis-developers/cosmosis
   license: BSD-2-Clause AND LicenseRef-non-commerical-use-only
   license_family: BSD
   license_file:
@@ -97,7 +97,7 @@ about:
     CosmoSIS is a framework designed primarily for cosmological
     parameter estimation.
   doc_url: https://cosmosis.readthedocs.io/
-  dev_url: https://github.com/joezuntz/cosmosis
+  dev_url: https://github.com/cosmosis-developers/cosmosis
 
 extra:
   recipe-maintainers:
