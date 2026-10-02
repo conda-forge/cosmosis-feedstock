@@ -6,11 +6,11 @@ package:
   version: "{{ version }}"
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: bbeed481411d2bfa83d0b14bcc3d16a0b80dcf1c1f099e5066d10e4711c36508
 
 build:
-  number: 0
+  number: 1
   # There is a problem with Linux OpenMPI that I would just like to skip for now
   skip: true  # [( (py < 36) or win )]
   # OpenMPI fails to cross-compile to arm64 unless this variable is exported
