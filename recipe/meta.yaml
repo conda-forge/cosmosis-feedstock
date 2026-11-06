@@ -1,5 +1,5 @@
 {% set name = "cosmosis" %}
-{% set version = "3.26" %}
+{% set version = "3.27.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bbeed481411d2bfa83d0b14bcc3d16a0b80dcf1c1f099e5066d10e4711c36508
+  sha256: d3864a4b4e263c8d644391fd224301aeff74803e954248dfd1ae4e836d8a5187
 
 build:
-  number: 2
+  number: 0
   # There is a problem with Linux OpenMPI that I would just like to skip for now
   skip: true  # [( (py < 36) or win )]
   # OpenMPI fails to cross-compile to arm64 unless this variable is exported
